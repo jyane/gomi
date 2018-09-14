@@ -47,6 +47,8 @@ L:
 		case "--":
 			args = args[1:]
 			break L
+		case "-r", "-f":
+			args = args[1:]
 		default:
 			if re.Match([]byte(arg)) {
 				fmt.Fprintf(cli.errStream, "gomi: %s: no such option\n", arg)
