@@ -38,7 +38,7 @@ L:
 		case "--version":
 			fmt.Fprintf(cli.errStream, "%s v%s\n", Name, Version)
 			return ExitCodeOK
-		case "-r", "--restore":
+		case "--restore":
 			restore = true
 			args = args[1:]
 		case "-s", "--system":
